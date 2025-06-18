@@ -4,6 +4,12 @@ import logindata from "../testData/login.json"
 import data from "../testData/addEmployee.json"
 import { log } from 'console';
 
+const jobtitles = {
+    jobtitle1: "CEO",
+    jobtitle2: "CFO",
+    jobtitle3: "COO",
+} 
+
 test('test', async ({ page }) => {
   await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
   await page.getByRole('textbox', { name: 'Username' }).click();
