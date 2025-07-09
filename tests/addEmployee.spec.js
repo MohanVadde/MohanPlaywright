@@ -11,7 +11,7 @@ const jobtitles = {
 } 
 
 test('test', async ({ page }) => {
-  await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
+  await page.goto('/web/index.php/auth/login');
   await page.getByRole('textbox', { name: 'Username' }).click();
   await page.getByRole('textbox', { name: 'Username' }).fill(logindata.username);
   await page.getByRole('textbox', { name: 'Password' }).click();
